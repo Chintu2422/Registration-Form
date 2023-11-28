@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+ body {
+   font-family: Arial, sans-serif;
+ }
+
+ table {
+   border-collapse: collapse;
+   width: 100%;
+   background-color: red;
+ }
+
+ th, td {
+   border: 1px solid red;
+   text-align: left;
+   padding: 8px;
+ }
+
+ th {
+   background-color: red;
+   color: white;
+ }
+
+ tr:nth-child(even) {
+   background-color: red;
+ }
+
+ input[type="submit"] {
+   background-color:red;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   position: absolute;
+ }
+
+ input[type="submit"]:hover {
+   background-color: red;
+ }
+
+  
+</style>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+ <table>
+    <tr>
+      <th>First Name</th>
+      <td><input type="text" name="firstname" required></td>
+    </tr>
+    <tr>
+      <th>Last Name</th>
+      <td><input type="text" name="lastname" required></td>
+    </tr>
+    <tr>
+      <th>Email ID</th>
+      <td><input type="email" name="email" required></td>
+    </tr>
+    <tr>
+      <th>Mobile Number</th>
+      <td><input type="text" name="mobilenumber" required></td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female
+      </td>
+    </tr>
+    <tr>
+      <th>Date of Birth (DOB)</th>
+      <td>
+        <input type="date" name="dob" required>
+      </td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td><input type="text" name="address" required></td>
+    </tr>
+    <tr>
+      <th>City</th>
+      <td><input type="text" name="city" required></td>
+    </tr>
+    <tr>
+      <th>Pin Code</th>
+      <td><input type="text" name="pincode" required></td>
+    </tr>
+    <tr>
+      <th>State</th>
+      <td><input type="text" name="state" required></td>
+    </tr>
+    <tr>
+      <th>Country</th>
+      <td><input type="text" name="country" required></td>
+    </tr>
+    <tr>
+      <th>Hobbies</th>
+      <td>
+        <input type="checkbox" name="hobby" value="Drawing"> Drawing
+        <input type="checkbox" name="hobby" value="Singing"> Singing
+        <input type="checkbox" name="hobby" value="Dancing"> Dancing
+        <input type="checkbox" name="hobby" value="Sketching"> Sketching
+        <input type="checkbox" name="hobby" value="Others"> Others
+      </td>
+    </tr>
+    <tr>
+      <th>Qualification</th>
+      <td>
+        <select name="qualification" required>
+          <option value="High School">High School (10th)</option>
+          <option value="Higher School">Higher School (12th)</option>
+          <option value="Graduation">Graduation (Bachelors)</option>
+          <option value="Post Graduation">Post Graduation (Masters)</option>
+          <option value="Phd">Phd</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>Subjects</th>
+      <td>
+        <input type="checkbox" name="subject" value="Maths"> Maths
+        <input type="checkbox" name="subject" value="Physics"> Physics
+        <input type="checkbox" name="subject" value="Chemistry"> Chemistry
+        <input type="checkbox" name="subject" value="English"> English
+        <input type="checkbox" name="subject" value="Others"> Others
+      </td>
+    </tr>
+    <tr>
+      <th>Courses</th>
+      <td>
+        <input type="checkbox" name="course" value="Physics"> Physics
+        <input type="checkbox" name="course" value="Chemistry"> Chemistry
+        <input type="checkbox" name="course" value="Maths"> Maths
+        <input type="checkbox" name="course" value="Biology"> Biology
+        <input type="checkbox" name="course" value="Others"> Others
+      </td>
+    </tr>
+    <tr>
+      <th>Profile Picture</th>
+      <td><input type="file" name="profilepic" required></td>
+    </tr>
+ </table>
+ <input type="submit" value="Submit">
+ <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
